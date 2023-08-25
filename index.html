@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Emilio | Portafolio Web</title>
+
+<!--Estilos CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normal.css">
+    <link rel="stylesheet" href="assets/css/header/header.css">
+  <!--  <link rel="stylesheet" href="assets/css/header/foto.css">-->
+    <link rel="stylesheet" href="assets/css/perfil.css/perfil.css">
+    <link rel="stylesheet" href="assets/css/skills.css/skills.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia.css">
+    <link rel="stylesheet" href="assets/css/contacto.css/contacto.css">
+    <link rel="stylesheet" href="assets/css/proyectos/proyecto.css">
+    <link rel="stylesheet" href="assets/css/modal/modal.css">
+    <link rel="stylesheet" href="assets/css/formacion/formacion.css">
+
+  
+<!--Enlace JS -->
+    <script defer src="assets/js/app.js"></script>
+    <script defer src="assets/js/modal.js"></script>
+    <script defer src="assets/js/slider.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <style type="text/css">
+        .iframe-curriculum
+        {
+          border: 0px;
+          width: 100%;
+          height: 550px;
+        }
+    </style>
+</head>
+
+<!-- Sección de barra de navegación-->
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <img
+                  height="50"
+                  width="50"
+                  src="assets/css/pablo.jpeg"
+                  alt="foto de pablo"
+                />
+                <div class="logotipo">
+                    Pablo Emilio
+                </div>
+            </a>
+            <button class="open__menu" aria-label="Abrir Menu">
+                <!--<img src="assets/css/hamburger-icon.svg" alt="abrir menú">-->
+            </button>
+            <ul class="nav__menu">
+                <button class="close__menu" aria-label="Cerrar menú">
+                  <!--  <img src="assets/css/close-icon.svg" alt="cerrar menú">-->
+                </button>
+                <li><a href="#perfil" class="selected">Sobre Mi</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Sección de sobre mi-->
+    <div class="horizontal__padding vertical__padding">
+        <section class="perfil" id="perfil">
+            <div class="perfil__info">
+                <h1 class="perfil__title">Hola, soy <br/> pablo emilio</h1>
+                <p class="perfil__detalle">
+                  Como entusiasta en formación, mi pasión radica en la conjunción entre diseño y programación de 
+                  páginas web. Mi habilidad para transformar conceptos en código y mi destreza en tecnologías como
+                   HTML, CSS, java, JavaScript, Mysql lo que me permiten crear interfaces atractivas y funcionales. Siempre actualizada
+                    en las últimas tendencias, mi enfoque es fusionar la estética visual con la excelencia técnica,
+                     aportando una perspectiva única a proyectos colaborativos. Mi objetivo es convertirme en la pieza
+                      clave para quienes buscan un toque apasionado y habilidoso en sus proyectos digitales.
+                </p>
+                <button class="perfil__btn" id="openModal">
+                Descargar CV
+                </button>
+            </div>
+            <span class="perfil__img__section">
+                <img class="perfil__img" src="assets/css/pablo.jpeg" alt="foto de perfil"/>
+            <div class="perfil__img-line"></div>
+            </span>
+        </section>
+    </div>
+
+<!-- Sección de experiencia-->
+    <section class="experiencias" id="experiencia">
+        <div class="experiencia__body">
+            <h2 class="experiencia__titulo">Experiencia</h2>
+            <div class="experiencia__grid">
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="experiencia">
+                    <div class="experiencia__fecha">2023-Actualidad</div>
+                    <div class="experiencia__compania">Oracle One Alura</div>
+                    <div class="experiencia__posicion">Estudiante</div>
+                    <div class="experiencia__descripcion">
+                      Mi objetivo es adquirir conocimientos en lenguajes de programación, especializándome tanto en el desarrollo web Frontend como en el Backend. A través de esta especialización, pretendo no solo dominar las habilidades técnicas esenciales, sino también fortalecer mis habilidades blandas relacionadas con la innovación y la gestión. Mi meta última es convertirme en una profesional integral en el campo de las Tecnologías de la Información, capaz de abordar desafíos en ambos frentes y contribuir de manera significativa en proyectos y equipos</div>
+                    </div>
+                <div class="experiencia experiencia__left">  
+                    <div class="experiencia__fecha">2017-Actualidad</div>
+                    <div class="experiencia__compania">Universidad del quindio </div>
+                    <div class="experiencia__posicion">Estudiante</div>
+                    <div class="experiencia__descripcion">
+                      Busco crecer como estudiante de Ingeniería de Sistemas, explorando tanto el desarrollo web Frontend como el Backend. Mi objetivo es fusionar habilidades técnicas sólidas con destrezas de gestión e innovación, formándome como un profesional versátil en Tecnologías de la Información.
+                    </div>
+            </div>   
+            <div class="line"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="line"></div>
+                <div class="experiencia"> 
+                    <div class="experiencia__fecha">2021-2023</div>
+                    <div class="experiencia__compania">Ecotsl</div>
+                    <div class="experiencia__posicion">Apoyo logístico y auxiliar administrativo</div>
+                    <div class="experiencia__descripcion">
+                      Como profesional en Apoyo Logístico y Auxiliar Administrativo, mi objetivo es asegurar un flujo operativo eficiente y una gestión administrativa efectiva. Coordinando recursos, optimizando procesos logísticos y manteniendo registros precisos, contribuyo a la ejecución exitosa de proyectos. Además, brindo soporte en tareas administrativas clave, como la gestión de documentos y la coordinación de agendas, garantizando la organización y permitiendo que el equipo se enfoque en sus metas principales con confianza.
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+<!-- Sección de habilidades-->
+   <!--  <div class="horizontal__padding vertical__padding">
+        <section class="skills" id="habilidades" >
+            <h2 class="skills__title">Habilidades</h2>
+            <ul class="skill__list">
+                <li class="skill__skill">
+                  <img src="assets/Iconos/html5_64_icon.png" alt="Html5">              
+                  <p class="text-center">HTML</p>
+                </li>
+                <li class="skill__skill"> 
+                  <img src="assets/Iconos/css3_icon.png" alt="Html5">              
+                  <p class="text-center">CSS</p>
+                </li>
+                <li class="skill__skill">
+                  <img src="assets/Iconos/js_icon.png" alt="Html5">              
+                  <p class="text-center">JavaScript</p>
+                </li>
+                <li class="skill__skill">
+                  <img src="assets/Iconos/java.png" alt="Html5">              
+                  <p class="text-center">Java
+                  </p>
+                </li>
+                <li class="skill__skill">
+                  <img src="assets/Iconos/mysql.png" alt="Html5">              
+                  <p class="text-center">Mysql
+                  </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+-->
+
+<section class="skills container" id="habilidades" >
+  <h1 class="skills-titulo"> HABILIDADES</h1>
+  <div>
+      <ul class="list-skills">
+          <li class="list-skills_items">
+              <span>HTML 5</span>
+              <div class="skills__logo skills__logo--html5"></div>
+          </li>
+          <li class="list-skills_items">
+              <span>JavaScript</span>
+              <div class="skills__logo skills__logo--javascript"></div>
+          </li>
+          <li class="list-skills_items">
+              <span>MySQL</span>
+              <div class="skills__logo skills__logo--mysql"></div>
+          </li>
+          <li class="list-skills_items">
+              <span>CSS</span>
+              <div class="skills__logo skills__logo--css"></div>
+          </li>
+          <li class="list-skills_items">
+              <span>Bootstrap</span>
+              <div class="skills__logo skills__logo--bootstrap"></div>
+          <li class="list-skills_items">
+              <span>React</span>
+              <div class="skills__logo skills__logo--react"></div>
+          </li>
+      </ul>
+  </div>
+</section>
+
+<!-- Sección de FORMACION ACADEMICA-->
+<section class="experiencias" id="formacion">
+  <div class="experiencia__body">
+      <h2 class="experiencia__titulo">FORMACION ACADEMICA</h2>
+  </div>
+  <div class="mi-formacion">
+    <section id="container-slider">	
+      <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+      <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+      <ul class="listslider">
+        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+        <li><a itlist="itList_1" href="#"></a></li>
+        <li><a itlist="itList_2" href="#"></a></li>
+      </ul>
+      <ul id="slider">
+        <li style="background-color: #5a5baa;z-index:0; opacity: 1;">
+          <div class="content_slider" >
+            <div>
+              <img src="assets/image/copacom.png" class="logos-instituciones">
+              <h2>Colegio parroquial la consolata</h2>
+              <p> Bachiller.</p>
+              <p>2016</p>
+             
+            </div>
+          </div>
+        </li>
+        <li style="background-color:#afdbb5;">
+          <div class="content_slider" >
+            <div>
+              <img src="assets/image/logo-universidad-del-quindio.png" class="logos-instituciones">
+              <h2>Universidad del Quindío</h2>
+              <p>Ingeniería de Sistemas y Computación</p>
+              <p>2017-Actualidad</p>
+            </div>
+          </div>
+        </li>
+        <li style="background-color: rgb(230, 169, 83); ">
+          <div class="content_slider" >
+            <div>
+              <img src="assets/image/Oracle.png" class="logos-instituciones">
+              
+              <h2>Alura Latam – Oracle</h2>
+              <p>Formación en Desarrollo web Fronted </p>
+              <p>2023-Actualidad </p>
+            </div>
+          </div>
+        </li>
+     </ul>
+   </section>
+  </div>
+</section>
+
+<!-- Sección de PROYECTOS-->
+<div class="horizontal__padding vertical__padding">
+  <h1 class="proyectos-titulo">PROYECTOS</h1>
+  <section class="perfil" id="proyectos" >
+      <div class="card">
+        <h3 class="card-title">Encriptador</h3>
+        <p><img class="proyectos_img" src="assets/image/encriptar.PNG" alt="Encriptador"/></p>
+        <a href="https://github.com/fabioo03/Encriptador" target="_blank">Repositorio</a>
+        <a href="https://fabioo03.github.io/Encriptador/" class="btn-secundario"  target="_blank">Ver demo</a>
+    </div>
+  </section>
+</div>
+
+<!-- Sección de contacto-->
+    <div class="horizontal__padding vertical__padding">
+      <section class="contacto" id="contacto">
+        <h2 class="contacto__title">Contacto</h2>
+        <div class="contacto__detalle">
+          <div class="contacto__detalle__grupo">
+            <p class="contacto__label">Dirección:</p>
+            <p class="contacto__text">Calarcá (Quindío)</p>
+        </div>
+        <div class="contacto__detalle__grupo">
+          <p class="contacto__label">Email:</p>
+          <p class="contacto__text">pabloemiliomunozvaca@gmail.com</p>
+        </div>
+        <div class="contacto__detalle__grupo">
+          <p class="contacto__text">
+            Deje su mensaje y con gusto le responderé
+          </p>
+        </div>
+        </div>
+        <form class="contacto__form" action="mailto:pabloemiliomunozvaca@gmail.com">
+          <div class="contacto__form__grupo">
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name"/>
+          </div>
+          <div class="contacto__form__grupo">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email"/>
+          </div>
+          <div class="contacto__form__grupo">
+            <label for="message">Mensaje</label>
+            <textarea required name="message" id="message" rows="6"></textarea>
+          </div>
+          <button type="submit" class="contacto__form__submit">Enviar</button>
+        </form>
+        <nav class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://github.com/fabioo03" class="social__link">
+              <img src="assets/Iconos/211904_social_github_icon.svg" alt="github profile"/>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.linkedin.com/in/pablo-emilio-munoz-vaca-115942222/"
+              class="social__link">
+              <img src="assets/Iconos/104493_linkedin_icon.svg" alt="linkedin profile"/>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+  </div>
+  <header class="foother">
+    <nav class="nav-foother">
+      2023 &copy; pablo emilio muñoz vaca. Todos los derechos reservados.
+    </nav>
+</header>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Curriculum Vitae</h2>
+      <p>
+        <iframe class="iframe-curriculum" src="assets/documentos/Hoja de Vida - Pablo Emilio Muñoz Vaca.pdf"></iframe>
+
+      </p>
+    </div>
+  </div>
+</body>
+</html>

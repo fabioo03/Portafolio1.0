@@ -1,0 +1,62 @@
+.card {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #ccd6f6; /* Gris claro */
+  background: rgba(0, 0, 0, 0.25); /* Fondo negro semitransparente */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(7, 3, 252, 0.3);
+  margin-top: 25px;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3498db; /* Azul claro */
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+  color: #ccd6f6; /* Gris claro */
+}
+
+.card a {
+  background-color: #0a192f; /* Azul oscuro */
+  border-radius: 0.5rem;
+  color: #3498db; /* Azul claro */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.proyectos_img {
+  width: 100%;
+}
+
+.btn-secundario {
+  background-color: #0a192f !important; /* Azul oscuro */
+}
+.proyectos-titulo {
+  margin-top: 2rem;
+  color: #3498db;
+  font-size: 40PX;
+  font-weight: 700;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .proyectos-titulo {
+      font-size: 32px;
+  }
+
+  .list-proyectos {
+      justify-content: center;
+  }
+
+  .list-proyectos{
+      width: 11rem;
+  }
+}

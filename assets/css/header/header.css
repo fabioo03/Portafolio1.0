@@ -1,0 +1,146 @@
+.header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 4px #3498db;
+    background: #1a1a1a;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Bad Script', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #3498db;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.nav__menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__menu li {
+    padding: 0 15px;
+}
+
+.nav__menu a {
+    font-family: 'Coming Soon', cursive;
+    color: #3498db;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav__menu a::after {
+    content: "";
+    background-color: #3498db;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav__menu a.selected::after,
+.nav__menu a:hover::after {
+    opacity: 0.8;
+}
+
+.nav__menu a:hover {
+    color: rgb(196, 225, 54);
+}
+
+.open__menu,
+.close__menu {
+    display: none;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+@media (max-width: 950px) {
+    
+    .nav__menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: #1a1a1a;
+        color: black;   
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    
+    .nav__menu li {
+        padding: 0;
+    }
+    
+    .nav__menu a {
+        font-family: 'Coming Soon', cursive;
+        color: black;
+        font-size: 25px;
+        line-height: 70px;  
+    }
+
+    .open__menu,
+    .close__menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    .close__menu {
+        align-self: flex-end;
+        padding: 20px 15px;
+    }
+    
+    .menu__opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+    
+    .open__menu:focus:not(:focus-visible),
+    .close__menu:focus:not(:focus-visible) {
+        outline: none;
+    }
+    
+    .nav__menu a::after {
+        content: none;
+    }
+
+    .nav__menu a:hover,
+    .nav__menu a.selected {
+        color: black;
+    }
+}

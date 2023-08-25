@@ -1,0 +1,141 @@
+.experiencias {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia__body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #1a1a1a;
+    color: #3498db;
+}
+
+.wave {
+    width: 100%;
+    position: relative;
+    top: 2px;
+}
+
+.wave__bottom {
+    transform: scaleY(-1);
+    top: -2px;
+}
+
+.experiencia__titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.experiencia__fecha {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.experiencia__compania {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    color: black;
+    margin-top: 5px;
+}
+
+.experiencia__posicion {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.experiencia__descripcion {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.experiencia {
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+    .experiencia__titulo {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 25px;
+    }
+    
+    .experiencia__fecha {
+        font-size: 30px;
+        font-weight: bold;
+        color: #3498db;
+    }
+    
+    .experiencia__compania {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Russo One', sans-serif;
+        color: rgb(241, 235, 235);
+        margin-top: 5px;
+    }
+    
+    .experiencia__posicion {
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .experiencia__descripcion {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: justify;
+    }
+    
+    .experiencia {
+        padding: 0;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .experiencia__left {
+        text-align: right;
+    }
+    
+    .experiencia__grid {
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        gap: 20px 70px;
+        padding: 70px;
+        justify-content: center;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    
+    .line {
+        background-color: #3498db;
+        position: relative;
+    }
+
+    .line::before,
+    .line::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #3498db;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: -9px;
+    }
+    
+    .line::after {
+        top: 100%;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,118 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #000000;
+}
+
+.skills-titulo {
+    margin-top: 2rem;
+    color: #3498db;
+    font-size: 40PX;
+    font-weight: 700;
+    text-align: center;
+}
+
+.list-skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 16px;
+    margin-bottom: 2rem;
+}
+  
+.list-skills_items{
+    background-color: #ccc1c1;
+    padding: 0.1rem;
+    width: 9rem;
+    height: 9rem;
+    color: #0e063c;
+    font-weight: 500;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.list-skills_items span{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.skills__logo {
+    height: 3rem;
+    width: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+
+.skills__logo--html5 {
+    background-image: url(../img/html-svgrepo-com-color.svg);
+}
+
+.skills__logo--javascript {
+    background-image: url(../img/javascript-svgrepo-com.svg);
+}
+
+.skills__logo--mysql {
+    background-image: url(../img/mysql-svgrepo-com.svg);
+}
+
+.skills__logo--css {
+    background-image: url(../img/css-3-svgrepo-com.svg);
+}
+
+.skills__logo--bootstrap {
+    background-image: url(../img/bootstrap-fill-svgrepo-com.svg);
+}
+
+.skills__logo--react {
+    background-image: url(../img/react-svgrepo-com.svg);
+}
+
+@media screen and (min-width: 768px) {
+    .list-skills_items{
+        width: 12rem;
+    }
+
+    .skills__logo--html5,
+    .skills__logo--javascript,
+    .skills__logo--mysql,
+    .skills__logo--css,
+    .skills__logo--bootstrap,
+    .skills__logo--react {
+        filter: grayscale(2);
+    }
+
+    .skills__logo--html5:hover, 
+    .skills__logo--javascript:hover, 
+    .skills__logo--mysql:hover,
+    .skills__logo--css:hover,
+    .skills__logo--bootstrap:hover,
+    .skills__logo--react:hover {
+        filter: none;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills-titulo {
+        font-size: 40Px;
+    }
+
+    .list-skills {
+        justify-content: center;
+    }
+
+    .list-skills_items{
+        width: 11rem;
+    }
+}
